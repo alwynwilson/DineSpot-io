@@ -16,3 +16,50 @@
   width: 16rem;
   height: 100%; /* Ensure the card height is 100% of its container */
 }
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-card .product-image {
+  transition: filter 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  filter: blur(5px);
+}
+
+.product-card .product-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-title {
+  background: none; /* No background */
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1; /* Ensure the title is above the overlay */
+}
+
+.pagination {
+  justify-content: center;
+}
+
+.pagination .page-item .page-link {
+  background-color: black;
+  color: white;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: darkgray;
+  color: white;
+}

@@ -14,7 +14,7 @@ function Header({insideHome}) {
   const dispatch = useDispatch()
   return (
     <>
-      <Navbar expand="lg"  style={{background:"Black",marginTop:'-80px'}}>
+      <Navbar expand="lg"  style={{background:"Black",marginTop:'-100px'}}>
       <Container>
         <Navbar.Brand href="#home"><h1 className='text-warning'><i class="fa-solid fa-location-dot me-2"></i>DineSpot</h1></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
